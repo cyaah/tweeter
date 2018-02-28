@@ -10,6 +10,7 @@
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
@@ -18,7 +19,9 @@
     <script type="text/javascript" src="/scripts/app.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,700,700i" rel="stylesheet">
-
+    
+    <!--Loading bootstrap 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
   </head>
 
   <body>
@@ -31,12 +34,14 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <h1>DFFNINVINVV</h1>
-      <p>sjasdjaaf</p>
-      <p>vnvnvnvnvn</p>
-
-
+     <section class="new-tweet">
+     <h2>Compose Tweet</h2>
+     <form method ="POST" action="/tweets">
+       <textarea name="text" placeholder="What are you humming about?"></textarea>
+       <input type="submit" value="Tweet">
+       <span class="counter">140</span>
+     </form>
+     </section>   
     </main>
- 
-  </body>
+ </body>
 </html>

@@ -5,6 +5,8 @@
     width: 100%;
     padding-left: 2em;
     padding-right: 2em; 
+    position: fixed;
+    top: 0;
 }
 
 #nav-bar .logo{
@@ -19,4 +21,5 @@
 	float: left;
     line-height: 70px; 
     font-size:  200%;
+    padding-left: 10px;
 }

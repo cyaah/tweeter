@@ -15,17 +15,19 @@ html {
  */
 
 body {
-  margin: 0;
+  padding-left: 40px;
+  padding-right: 40px;
   color: #244751;
   background-color: #eee;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-main {
+main.container {
+	height:5000px;
 	width: 450px;
-	margin: 140px auto;
-	text-align: center;
+	margin:auto;
 	background-color: white;
+	padding-top: 80px;
 }
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
