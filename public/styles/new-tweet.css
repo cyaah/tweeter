@@ -6,7 +6,7 @@ section.new-tweet{
 	height: 135px;
 	
 }
-.container h2 {
+.new-tweet h2 {
 border-bottom: 2px solid;
 text-align: left;
 }
