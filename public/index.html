@@ -29,23 +29,26 @@
   </head>
 
   <body>
+    <div>
     <!-- Top nav bar (fixed) -->
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
+      <button class="composeToggle">Compose</button>
     </nav>
-
+  </div>
     <!-- Page-specific (main) content here -->
     <main class="container">
+      <div id= 'composeBox'>
      <section class="new-tweet">
      <h2>Compose Tweet</h2>
-     <form method ="POST" action="/tweets">
+     <form id="composeForm" method ="POST" action="/tweets">
        <textarea id = "textarea" name="text" placeholder="What are you humming about?"></textarea>
-       <input type="submit" value="Tweet">
+       <input id="compose" type="submit" value="Tweet">
        <span class="counter">140</span>
      </form>
      </section>   
-     
+     </div>
  
    <!--  <section id="allTweets"> 
       <article>
