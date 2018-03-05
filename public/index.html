@@ -15,17 +15,17 @@
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
     
  
  
 
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,700,700i" rel="stylesheet">
     
-    <!--Loading bootstrap 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
   </head>
 
   <body>
@@ -34,7 +34,8 @@
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
-      <button class="composeToggle">Compose</button>
+      <button class="composeToggle">Compose <i class="fas fa-pen-square"></i></button>
+
     </nav>
   </div>
     <!-- Page-specific (main) content here -->
@@ -49,23 +50,10 @@
      </form>
      </section>   
      </div>
- 
-   <!--  <section id="allTweets"> 
-      <article>
-        <header class="tweetHeader">
-          <img class="userPic" src="/images/bird.png">
-          <span class="userName">@bill</span>
-          <h2>Bill</h2>
-          
-        </header>
-        <p>cnkcnkcndmdcmc cd dkcdkmckcdkmcdkmcdkc </p>
-        
-        <footer>         
-          10 days ago
-        </footer>
-      </article>
-    </section> -->
-
+    <section id="tweetsContainer">
+      
+    </section>
     </main>
+
  </body>
 </html>

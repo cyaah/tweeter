@@ -1,10 +1,14 @@
+.allTweets{
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
 .allTweets article{
 	margin-top: 30px;
 	border-style: solid;
 	border-radius: 15px;
 	border-color: black;
 	overflow: hidden;
-	height: 200px;
 	opacity: 0.7;
 }
 .allTweets article:hover {
@@ -32,8 +36,7 @@
 
 .userName {
 	float: right;
-/*	padding-right: 20px;
-	padding-top: 20px;*/
+
 }
 
 .allTweets footer{
@@ -43,8 +46,8 @@
 	margin-top: 3em;
 }
 
-.allTweets i {
+.allTweets #bottomRight {
 	float: right;
-	border-left: 10px;
+	
 }
 

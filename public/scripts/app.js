@@ -5,15 +5,29 @@
  */
 
  $(function(){ // jQuery document.ready shortcut
+// Function to convert to days last posted
+function daysAgo(time) {
+   const currentDate = Date.now();
+   const currentTime = currentDate - time;
+   const millisecond = (24 * 60 * 60 * 1000)
+   const daysAgo = Math.round(Math.abs(currentTime / millisecond));
+
+   return daysAgo.toLocaleString();
+
+ }
+
+console.log(daysAgo(1461113796368));
 
 
 
+
+// Rendering Tweets to display
   function renderTweets(tweets) {
     // loops through tweets
     tweets.forEach(function(tweet) {
 	   // calls createTweetElement for each tweet
       const $tweet = createTweetElement(tweet);
-      $('.container').append($($tweet));
+      $('#tweetsContainer').prepend($($tweet));
 
     });
   }
@@ -35,14 +49,13 @@
               </header>
 
                   <p> ${tweet.content.text}</p>
-
               <footer>
+                    <div id="bottomRight">
                       <i class="fas fa-flag"></i>
                       <i class="fas fa-retweet"></i>
                       <i class="fas fa-heart"></i>
-                      <p> 10 days ago</p>
-
-
+                    </div>  
+                      <p> ${daysAgo(tweet.created_at)} Days Ago</p>
               </footer>
             </article>
           </section>
@@ -51,8 +64,7 @@
     return $tweet;
   }
  
-
- /* renderTweets(tweets);*/
+// Conditional to check if tweet posted is not empty and less than 140 characters
 $('#compose').on('click',function(ev){
   ev.preventDefault()
    console.log('Tweet ');

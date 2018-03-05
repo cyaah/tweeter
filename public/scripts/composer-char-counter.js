@@ -1,6 +1,7 @@
+//Function to calculate character counter
 $(document).ready(function () {
- $('textarea').keypress( function(event) {
-   var text_max = 139;
+ $('textarea').keyup( function(event) {
+   var text_max = 140;
    var text_length = $(this).val().length;
    var text_remaining = $(".counter").html(text_max - text_length);
 

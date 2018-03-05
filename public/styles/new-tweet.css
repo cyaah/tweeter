@@ -1,4 +1,4 @@
-
+/*Styling for new tweets*/
 section.new-tweet{
 	padding-left: 20px;
 	padding-right: 20px;
@@ -21,7 +21,7 @@ textarea {
 
 }
 
-.new-tweet span{
- 	float:right;
+span.counter{
+	float: right;
 }
 
