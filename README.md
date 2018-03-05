@@ -1,3 +1,6 @@
+Screenshot of home page (https://github.com/cyaah/tweeter/blob/master/Docs/Tweeter%20Home%20Page.png)
+
+
 # Tweeter Project
 
 Tweeter is a simple, single-page Twitter clone.
